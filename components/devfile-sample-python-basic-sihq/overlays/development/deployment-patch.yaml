@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-sihq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-vprh-tenant/test-app-mylw/devfile-sample-python-basic-sihq@sha256:9b6f8d2224b31d7985f5e6caec5428e6172ea33a6b75bdbebf8f170f18cbc5f4
+        name: my-python
+        resources: {}
+status: {}
